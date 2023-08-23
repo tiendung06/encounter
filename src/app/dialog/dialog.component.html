@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Thông tin</h1>
+<div mat-dialog-content>
+  <p>Thông tin khách hàng</p>
+  <p>Mã giao dịch: {{ data?.id }}</p>
+  <p>Mã khách hàng: {{ data?.customerName }}</p>
+  <p>Loại yêu cầu: {{ data?.requestName }}</p>
+  <p>Trạng thái: {{ data?.stateName }}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Update</button>
+  <button mat-button mat-dialog-close>Cancel</button>
+</div>

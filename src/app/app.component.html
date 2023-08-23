@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="container">
+    <h1 class="title">Danh sách khách hàng chờ giao dịch</h1>
+    <div class="table">
+      <table>
+        <thead>
+          <th class="position">Số thứ tự</th>
+          <th class="customer">Tên khách hàng</th>
+        </thead>
+        <tr
+          *ngFor="let item of dataSource; let i = index"
+          (click)="rowClick(item)"
+        >
+          <td class="position">{{ i + 1 }}</td>
+          <td class="customer">{{ item.customerName }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
